@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+
+<body>
+
+<h1>This is my first heading</h1>
+<p>This is my first paragraph</p>
+
+<a  href="http"> This is a link<a/>
+
+<img src="w3schools.jpg" alt="w3schools.com" width="104" hight="142"
+
+
+<p>This is a <br> paragraph with a line break.</p>
+
+
+
+
+
+</body>
+
+
+
+</hmtl>
