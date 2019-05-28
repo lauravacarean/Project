@@ -2,23 +2,43 @@
 <html>
   <head>
     <title>Travel reservation form</title>
+    <style>
+        
+        input {
+            height: 30px;
+            border-color:salmon;
+            border-radius:10px;
+            border-bottom-right-radius: 0px;
+            border-width: 5px;
+            border-style:dashed;
+            margin-bottom:52px;
+            padding: 27px;
+            letter-spacing: 0.0725em;
+            
+        }
+        #agree {font-size:  20px}
+
+
+    </style>
   </head>
   <body>
-    <h1>Travel reservation form</h1>
-
+    <h1 style = "color:blueviolet">Travel reservation form</h1>
+ 
     <p><b>* denotes mandatory</b></p>
     <form>
-      Full name*:<br />
+    <label for="name">Full name*:></label><br />
       <input
         type="text"
+        id="name"
         name="Fullname"
         placeholder="FirstName LastName"
         required
       /><br />
 
-      Email address*:<br />
+      <label for="email">Email address*:</label><br />
       <input
         type="email"
+        id="email"
         name="Fullname"
         placeholder="Email_Address"
         required
@@ -36,10 +56,10 @@
       <!-- This code for date, in mozilla it opens the calendar when clicking mm/dd/yyyy, 
     but in chrome i have to click the drop down sign to open the calendar-->
 
-      Number of persons*:<br />
+     <label for="number" >Number of persons*:</label><br />
       <input
         type="number"
-        id="number of persons"
+        id="number"
         name="number of persons"
         required
       /><br />
