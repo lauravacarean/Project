@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+
+  <body>
+    <h1>My feedback form</h1>
+    <form action="bio.html">
+      <ul>
+        <li>Name:<input type="text" name="Name" /><br /></li>
+        <li>Email:<input type="email" name="email" required /><br /></li>
+        <li>
+          Password:<input
+            type="password"
+            name="password"
+            minlength="4"
+            required
+          /><br />
+        </li>
+      </ul>
+
+      <ul>
+        <li>Please check all the emotions that apply to you:</li>
+      </ul>
+
+      <ul>
+        <li>
+          Angry<input
+            type="checkbox"
+            name="Angry"
+            value="Angry"
+            checked
+          /><br />
+        </li>
+        <li>Sad<input type="checkbox" name="Sad" value="Sad" /><br /></li>
+        <li>Happy<input type="checkbox" name="Happy" value="Happy" /><br /></li>
+        <li>
+          Ambivalent<input
+            type="checkbox"
+            name="Ambivalent"
+            value="Ambivalent"
+          /><br />
+        </li>
+      </ul>
+
+      <ul>
+        <li>How satisfied were you with our service?</li>
+        <br />
+
+        <li>
+          Very satisfied
+          <input
+            type="radio"
+            name="radio"
+            value="Very satisfied"
+            checked
+          /><br />
+        </li>
+        <li>
+          Satisfied<input type="radio" name="radio" value="Satisfied" /><br />
+        </li>
+        <li>
+          Didn't care<input
+            type="radio"
+            name="radio"
+            value="Didn't care"
+          /><br />
+        </li>
+        <li>
+          Dissatisfied<input
+            type="radio"
+            name="radio"
+            value="Dissatisfied"
+          /><br />
+        </li>
+        <li>
+          Very dissatisfied<input
+            type="radio"
+            name="radio"
+            value="Very dissatisfied"
+          /><br />
+        </li>
+      </ul>
+      <ul>
+        <li>Further comments: <textarea name="comments"></textarea></li>
+        <li>
+          Bio photo:
+
+          <input type="file" name="BioPhoto" accept="image/*" />
+        </li>
+
+        <li>
+          Location visited:
+          <select>
+            <option value="">Select Location</option>
+            <option value="Iasi">Iasi</option>
+            <option value="Suceava">Suceava</option>
+          </select>
+        </li>
+
+        <li><input type="submit" value="Submit" /></li>
+      </ul>
+    </form>
+  </body>
+</html>

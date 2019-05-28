@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel reservation form</title>
+  </head>
+  <body>
+    <h1>Travel reservation form</h1>
+
+    <p><b>* denotes mandatory</b></p>
+    <form>
+      Full name*:<br />
+      <input
+        type="text"
+        name="Fullname"
+        placeholder="FirstName LastName"
+        required
+      /><br />
+
+      Email address*:<br />
+      <input
+        type="email"
+        name="Fullname"
+        placeholder="Email_Address"
+        required
+      /><br />
+
+      Select Tour Package*:<br />
+      <select name="package" required>
+        <option value="Goa">Goa</option>
+        <option value="Fiji">Fiji</option>
+        <option value="Hawaii">Hawaii</option></select
+      ><br />
+
+      <label for="Date">Arrival date*:</label><br />
+      <input type="date" id="Date" name="Arrival date" required /><br />
+      <!-- This code for date, in mozilla it opens the calendar when clicking mm/dd/yyyy, 
+    but in chrome i have to click the drop down sign to open the calendar-->
+
+      Number of persons*:<br />
+      <input
+        type="number"
+        id="number of persons"
+        name="number of persons"
+        required
+      /><br />
+
+      <span>What would you want to avail?</span>
+
+      <br />
+
+      <label for="Boarding">Boarding</label>
+      <input type="checkbox" name="Boarding" id="Boarding" />
+      <br />
+
+      <label for="Fooding">Fooding</label>
+      <input type="checkbox" name="Fooding" id="Fooding" /><br />
+
+      <label for="SightSeeing">Sight Seeing</label>
+      <input type="checkbox" name="SightSeeing" id="SightSeeing" /><br />
+
+      Discount Coupon code:<br />
+      <input type="text" name="CouponCode" placeholder="Unknown_Type" /><br />
+
+      <span>Terms and conditions*</span><br />
+      <label for="agree">I agree</label>
+      <input type="radio" id="agree" name="terms" checked />
+      <label for="disagree">I disagree</label>
+      <input type="radio" id="disagree" name="terms" />
+
+      <br />
+      <input type="submit" value="Complete Reservation" />
+    </form>
+  </body>
+</html>
