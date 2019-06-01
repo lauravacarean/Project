@@ -3,30 +3,31 @@
   <head>
     <title>Travel reservation form</title>
     <style>
-        
-        input {
-            height: 30px;
-            border-color:salmon;
-            border-radius:10px;
-            border-bottom-right-radius: 0px;
-            border-width: 5px;
-            border-style:dashed;
-            margin-bottom:52px;
-            padding: 27px;
-            letter-spacing: 0.0725em;
-            
-        }
-        #agree {font-size:  20px}
+        ul li:nth-child(4n+4){color:red;}
+        h1::first-letter{font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 100px;}
 
+        h1::after{content: "tema"}
 
     </style>
   </head>
   <body>
-    <h1 style = "color:blueviolet">Travel reservation form</h1>
+    <h1 >Travel reservation form</h1>
  
     <p><b>* denotes mandatory</b></p>
+    <ul>
+        <li>This is a list</li>
+        <li>This is a list</li>
+        <li>This is a list</li>
+        <li>This is a list</li>
+        <li>This is a list</li>
+        <li>This is a list</li>
+        <li>This is a list</li>
+        <li>This is a list</li>
+        <li>This is a list</li>
+        <li>This is a list</li>
+    </ul>
     <form>
-    <label for="name">Full name*:></label><br />
+    <label for="name">Full name*:</label><br />
       <input
         type="text"
         id="name"
@@ -68,14 +69,14 @@
 
       <br />
 
-      <label for="Boarding">Boarding</label>
+      <label for="Boarding" class="inline">Boarding</label>
       <input type="checkbox" name="Boarding" id="Boarding" />
       <br />
 
-      <label for="Fooding">Fooding</label>
+      <label for="Fooding" class="inline">Fooding</label>
       <input type="checkbox" name="Fooding" id="Fooding" /><br />
 
-      <label for="SightSeeing">Sight Seeing</label>
+      <label for="SightSeeing" class="inline">Sight Seeing</label>
       <input type="checkbox" name="SightSeeing" id="SightSeeing" /><br />
 
       Discount Coupon code:<br />
