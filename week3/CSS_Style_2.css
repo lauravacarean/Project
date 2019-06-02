@@ -1,0 +1,41 @@
+/* CSS_Style.css */
+li:nth-child(even) {
+  color: green;
+}
+li:nth-child(3) {
+  background-color: lightblue;
+}
+li:first-child {
+  border-top: 1px solid green;
+}
+li:last-child {
+  border-bottom: 5px dashed blue;
+}
+li:nth-child(3) a {
+  color: red;
+}
+li:nth-child(5) a {
+  color: red;
+}
+li:nth-child(5):hover a {
+  color: grey;
+}
+li:nth-child(3n + 2) {
+  list-style: none;
+}
+input[type="text"]:focus {
+  background-color: grey;
+}
+input[placeholder="first name"] {
+  color: green;
+}
+input[placeholder="last name"] {
+  color: blue;
+}
+input[type="email"]::selection {
+  background-color: yellow;
+  color: pink;
+}
+input[type="submit"]:hover {
+  color: red;
+}

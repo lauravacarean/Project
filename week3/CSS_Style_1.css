@@ -1,0 +1,21 @@
+/* CSS_Style.css */
+a {
+  color: red;
+  font-family: "Ranga", cursive;
+}
+.div {
+  border: 1px solid black;
+}
+div > a {
+  color: green;
+}
+#id {
+  color: #c55;
+}
+img {
+  height: 150px;
+  width: 150px;
+}
+.desc {
+  font-family: "Tangerine", cursive;
+}
