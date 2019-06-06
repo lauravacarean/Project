@@ -1,0 +1,31 @@
+body {
+    height: 1000px;
+  }
+  
+  .parent {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: relative;
+    
+  }
+  
+  .child {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+  }
+  .twins {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    
+  }
+  
