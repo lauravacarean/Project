@@ -1,0 +1,38 @@
+body {
+  height: 1000px;
+  margin-bottom: 100px;
+}
+.flex-container {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  
+  border: 3px solid turquoise;
+  margin-bottom: 100px;
+}
+.flex-container > nav {
+  box-sizing: border-box;
+  border: 2px solid fuchsia;
+  color: blueviolet;
+  width: 20%;
+  height: 200px;
+}
+
+.flex-container > div {
+  box-sizing: border-box;
+  width: 80%;
+  border: 2px solid yellowgreen;
+}
+.section:nth-child(3) {
+  background-color: lightgray;
+  color: purple;
+}
+footer {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  border: 2px solid darkgreen;
+}

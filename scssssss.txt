@@ -1,0 +1,35 @@
+.ex2 {
+  background-color: ;
+  width: 100px;
+  height: 100px;
+}
+.ex1 {
+  background-color: green;
+  width: 100px;
+  height: 100px;
+  transition: background-color 2s ease, transform 2s;
+}
+
+.ex1:hover {
+  background-color: blue;
+  transform: rotate(180deg);
+}
+
+.card {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  transition: width 2s ease 2s;
+}
+.card2 {
+  background-color: blue;
+  width: 100px;
+  height: 100px;
+  transition: width 2s ease;
+}
+.box:hover .card {
+  width: 300px;
+}
+.box:hover .card2 {
+  width: 300px;
+}
