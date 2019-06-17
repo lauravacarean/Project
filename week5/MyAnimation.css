@@ -1,0 +1,114 @@
+.container {
+  width: 500px;
+  height: 200px;
+}
+.item {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  float: left;
+  margin: 10px;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item:first-child {
+  background-color: pink;
+  border: 1px solid pink;
+  border-radius: 0%;
+  position: relative;
+  animation-duration: 3s;
+  animation-name: anim2;
+}
+.item:nth-child(2) {
+  background-color: blue;
+  border: 1px solid blue;
+  position: relative;
+  animation-duration: 1.5s;
+  animation-name: anim;
+  animation-delay: 0.1s;
+}
+.item:nth-child(3) {
+  background-color: turquoise;
+  border: 1px solid turquoise;
+  position: relative;
+  animation-duration: 1.5s;
+  animation-name: anim;
+  animation-delay: 0.2s;
+}
+.item:nth-child(4) {
+  background-color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+  position: relative;
+  animation-duration: 1.5s;
+  animation-name: anim;
+  animation-delay: 0.3s;
+}
+.item:nth-child(5) {
+  background-color: dodgerblue;
+  border: 1px solid dodgerblue;
+  position: relative;
+
+  animation-duration: 1.5s;
+  animation-name: anim;
+  animation-delay: 0.4s;
+}
+
+@keyframes anim {
+  0% {
+    transform: scale(0.2);
+    left: 0px;
+    top: 0px;
+  }
+  50% {
+    transform: scale(1.3);
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    transform: scale(1.5);
+    left: 0px;
+    top: 0px;
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    background-color: pink;
+    border-color: pink;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: rgb(179, 55, 107);
+    border-color: rgb(179, 55, 107);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    left: 0px;
+    top: 250px;
+  }
+  50% {
+    background-color: rgb(179, 55, 142);
+    border-color: rgb(179, 55, 142);
+    left: 350px;
+    top: 250px;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  75% {
+    background-color: purple;
+    border-color: purple;
+    left: 350px;
+    top: 0px;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+  }
+  100% {
+    background-color: pink;
+    border-color: pink;
+    left: 0px;
+    top: 0px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+}

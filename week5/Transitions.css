@@ -1,0 +1,30 @@
+.box {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    transition: background-color 2s ease, transform 2s ease;
+}
+.box:hover {
+    background-color: yellow;
+    transform: rotate(180deg);
+}
+
+.box1 {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    transition: width 2s ease 2s
+}
+.box2 {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    transition: width 2s ease ;
+}
+.cutie:hover .box1{
+    width: 300px;
+}
+    
+.cutie:hover .box2{
+    width: 300px;
+}
