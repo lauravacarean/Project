@@ -53,7 +53,6 @@ while (i<100){
 for (var i = 0; i < 5; i++) {
   console.log((sum = sum + (i + 1)));
 }
-
 //Factorial
 var fact = 1;
 for (var n = 0; n < 5; n++) {
@@ -63,10 +62,8 @@ for (var n = 0; n < 5; n++) {
 //CMMDC
 /* var x = prompt("");
 var y = prompt("");
-
 var x = Number(x);
 var y = Number(y);
-
 while (x != 0 && x != y) {
   if (x > y) {
     x = x - y;
@@ -86,9 +83,10 @@ var y = prompt("Grade Celsius sau Fahrenheit?", "Raspundeti cu C sau F", "");
 
 var x = Number(x);
 
-if (y == "C") {
+if (y == "C" || y == "c") {
   x = (x * 9) / 5 + 32;
+  alert(x + "°F");
 } else {
   x = ((x - 32) * 5) / 9;
+  alert(x + "°C");
 }
-console.log(x);

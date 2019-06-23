@@ -52,21 +52,22 @@ while (i<100){
 /* var sum = 0;
 for (var i = 0; i < 5; i++) {
   console.log((sum = sum + (i + 1)));
-}
-
-//Factorial
-var fact = 1;
-for (var n = 0; n < 5; n++) {
-  console.log((fact = fact * (n + 1)));
 } */
 
+//Factorial
+/* var fact = 1;
+var n = prompt("");
+var n = Number(n);
+for (var i = 0; i < n; i++) {
+  fact = fact * (i + 1);
+}
+alert(fact); */
 //CMMDC
+
 /* var x = prompt("");
 var y = prompt("");
-
 var x = Number(x);
 var y = Number(y);
-
 while (x != 0 && x != y) {
   if (x > y) {
     x = x - y;
