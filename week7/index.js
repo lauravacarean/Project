@@ -144,6 +144,8 @@ function add (a,b) {
     console.log("sum=", sum);
 }
 add (6,3); */
+
+
 /* var myArray = [22, 3, 23, 2, 5, 11];
 console.log(myArray);
 
