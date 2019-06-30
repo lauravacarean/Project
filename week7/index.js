@@ -145,7 +145,6 @@ function add (a,b) {
 }
 add (6,3); */
 
-
 /* var myArray = [22, 3, 23, 2, 5, 11];
 console.log(myArray);
 
@@ -208,7 +207,6 @@ console.log(Dictionary.it) */
 helloWorldInLang("es");
 helloWorldInLang(); */
 
-
 //2. Functie min din array
 /* var myArray = [22, 3, 23, 2, 5, 11]
 function minimum() {
@@ -220,22 +218,86 @@ function minimum() {
 }
 console.log(minimum(myArray)); */
 
-
 //3. Prim
 
-function prime (nr){
-  if(nr===1){
-return false
-  }else if (nr===2){
-return true
-  }else{ 
-    for(var i=2; i<nr; i++){
-      if(nr%i===0){
-return false;
+/* function prime(nr) {
+  if (nr === 1) {
+    return false;
+  } else if (nr === 2) {
+    return true;
+  } else {
+    for (var i = 2; i < nr; i++) {
+      if (nr % i === 0) {
+        return false;
       }
     }
-return true;
+    return true;
   }
 }
-console.log(prime(21));
-console.log(prime(23));
+console.log(prime(2));
+console.log(prime(4));
+
+//functie care primeste ca argumente un sir de caractere si un numar si
+//returneaza sirul de caractere repetat de cate ori se specifica numarul.
+function repeat(a, b) {
+  var repeatString = "";
+  while (b > 0) {
+    repeatString += a;
+    b--;
+  }
+  return repeatString;
+}
+console.log(repeat("ana", 4));
+
+//Scrieti o functe care accepta ca argument venitul anual al unui angajat in dolari si
+//calculeaza taxa corespunzatoare fol urm criterii:
+// daca angajatul castiga anual o suma<30000-taxa 0
+//50-99 - 35
+// 1000 - 40%
+
+function taxe(n) {
+  var taxa;
+  if (n <= 30000) { return "Taxa este de 0%";}
+  if (n > 30001 && n<50000) {
+    taxa= n*0.15;
+    return "Taxa este de 15%" + taxa;}
+  if (n >=50001 && n<=99999) {return "Taxa este de 35%";} 
+  return calculateTax(n, 40)
+}
+
+console.log(taxe(35000));
+console.log(taxe(999999));
+console.log(taxe(35000));
+
+
+function calculateTax(n,tax){
+  return "Taxa este "+ tax
+}
+
+var cantareti = [
+  "Dua Lipa",
+  "Gabriel Cotabita",
+  "Nu am",
+  "The Weeknd",
+  "Elena Gheorghe",
+  "Cantaret 3",
+  "Cantaret 4",
+]
+console.log(cantareti);
+console.log(cantareti.indexOf("Gabriel Cotabita"));
+console.log(cantareti)
+
+
+const result =  cantareti.findIndex(function(element)
+{return element.name === "Gabriel Cotabita"
+
+});
+
+console.log("Result= ", result);
+ */
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+
+const result3 = numbers.filter(function(element) {
+  return element % 2 === 0;});
+console.log("Result3 = ", result3);

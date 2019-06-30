@@ -92,4 +92,4 @@ function prime(nr) {
   }
 }
 console.log(prime(21));
-console.log(prime(23));
+console.log(prime(-1));
